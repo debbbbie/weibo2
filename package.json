@@ -1,0 +1,47 @@
+{
+    "name": "weibo2",
+    "version": "0.0.1",
+    "description": "Weibo SDK with OAuth2, base on node. Now support sina weibo.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/debbbbie/weibo2.git"
+    },
+    "author": {
+        "name": "debbbbie",
+        "email": "debbbbie@163.com",
+        "url": "http://github.com/debbbbie"
+    },
+    "main": "index",
+    "contributors": [
+        {
+            "name": "debbbbie",
+            "email": "debbbbie@163.com"
+        }
+    ],
+    "scripts": {
+        "test": "make test"
+    },
+    "dependencies": {
+        "express": ">=3.0.0"
+    },
+    "keywords": [
+        "framework",
+        "node",
+        "web",
+        "rest",
+        "restful",
+        "weibo",
+        "sdk",
+        "weibo2",
+        "oauth2",
+        "nodejs",
+        "node.js",
+        "javascript"
+    ],
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "readme": "# weibo2: A weibo(like twitter) API SDK with oauth2, use on browser client and nodejs server.\n\n1.run test_weibo2.js\n2.open browser with http://localhost:3009\n3.input your sinaweibo's account password, and it will send a content to your weibo",
+    "_id": "weibo2@0.0.1",
+    "_from": "weibo2"
+}
