@@ -1,12 +1,13 @@
 var OAuth2 = require('weibo2').OAuth2;
 var clientId = '3845995382',
-    clientSecret = 'f12753195288ff1d6225b4773c080788';
-var oauth2 = new OAuth2(clientId, clientSecret);
+    clientSecret = 'f12753195288ff1d6225b4773c080788',
+    redirectUri = 'http://127.0.0.1:3009/authorize_callback';
+var oauth2 = new OAuth2(clientId, clientSecret,redirectUri);
 
 
 var app = require('express').createServer();
 app.get('/',function(req,res){
-    res.redirect(authorize_url);
+    res.redirect(oauth2.getAuthorizeUrl());
 });
 app.all('/authorize_callback', function(req, res){
     oauth2.getOAuthAccessToken(req.query.code,{},function(err, access_token){
